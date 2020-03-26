@@ -5,38 +5,10 @@ has_toc: false
 ---
 # Widgets
 
-- [Widgets](#widgets)
-  - [Create a widget](#create-a-widget)
-  - [Base Properties](#base-properties)
-    - [onIndex](#onindex)
-    - [onView](#onview)
-    - [onCreate](#oncreate)
-    - [onEdit](#onedit)
-    - [onStore](#onstore)
-    - [sortable](#sortable)
-    - [searchable](#searchable)
-    - [customStore](#customstore)
-    - [customPreStore](#customprestore)
-    - [customPostStore](#custompoststore)
-    - [customModifyResponse](#custommodifyresponse)
-    - [customModifyRequest](#custommodifyrequest)
-    - [value](#value)
-    - [name](#name)
-    - [title](#title)
-    - [description](#description)
-    - [indexTag](#indextag)
-    - [viewGroupTag](#viewgrouptag)
-    - [viewTag](#viewtag)
-    - [tag](#tag)
-    - [groupTag](#grouptag)
-    - [class](#class)
-    - [cols](#cols)
-    - [rules](#rules)
-    - [createRules](#createrules)
-    - [editRules](#editrules)
-    - [translation](#translation)
-  - [Availble widgets](#availble-widgets)
-  - [Extending widgets](#extending-widgets)
+- [Create a widget](#create-a-widget)
+- [Base Properties](#base-properties)
+- [Availble widgets](#availble-widgets)
+- [Extending widgets](#extending-widgets)
 
 Widgets are classes that handling model field operations like showing field, show in table, searching, sorting, and etc.
 
@@ -51,42 +23,42 @@ $this->widgets[] = TextWidget::create('field name', 'Label')
 ## Base Properties
 These properties exists in all widgets.
 
-### onIndex
+#### onIndex
 `type: boolean`
 
 is this element availble on index.
 
-### onView
+#### onView
 `type: boolean`
 
 is this element availble on view.
 
-### onCreate
+#### onCreate
 `type: boolean`
 
 is this element availble on create.
 
-### onEdit
+#### onEdit
 `type: boolean`
 
 is this element availble on edit.
 
-### onStore
+#### onStore
 `type: boolean`
 
 should this store in database.
 
-### sortable
+#### sortable
 `type: boolean`
 
 is this widget sortable.
 
-### searchable
+#### searchable
 `type: boolean`
 
 is this widget searchable.
 
-### customStore
+#### customStore
 `type: callable`
 
 store with custom method
@@ -99,85 +71,85 @@ parameters : ($request, $item).
 });
 ```
 
-### customPreStore
+#### customPreStore
 `type: callable`
 
 pre store with custom method
 
 parameters : ($request, $item).
 
-### customPostStore
+#### customPostStore
 `type: callable`
 
 post store with custom method
 
 parameters : ($request, $item).
 
-### customModifyResponse
+#### customModifyResponse
 `type: callable`
 
 custom item response modifyer
 
 parameters : ($response, $item).
 
-### customModifyRequest
+#### customModifyRequest
 `type: callable`
 
 custom request modify
 
 parameters : ($request, $item).
 
-### value
+#### value
 `type: mixed`
 
 default value for input.
 
-### name
+#### name
 `type: string`
 
 field name.
 
-### title
+#### title
 `type: string`
 
 field title.
 
-### description
+#### description
 `type: string`
 
 field description.
 
-### indexTag
+#### indexTag
 `type: string`
 
 field default tag in table columns.
 
-### viewGroupTag
+#### viewGroupTag
 `type: string`
 
 field default view wraping group tag in show page.
 
-### viewTag
+#### viewTag
 `type: string`
 
 field default tag in show page.
 
-### tag
+#### tag
 `type: string`
 
 field tag.
 
-### groupTag
+#### groupTag
 `type: string`
 
 field wraping group tag.
 
-### class
+#### class
 `type: string`
 
 class of input field.
 
-### cols
+#### cols
 `type: string`
 
 bootstrap based column width.
@@ -188,7 +160,7 @@ $this->widgets[] = TextWidget::create('description')
                     ->cols(8);
 ```
 
-### rules
+#### rules
 `type: string|array`
 
 Add custom validation rules to widget.
@@ -197,17 +169,17 @@ $this->widgets[] = TextWidget::create('name')
                     ->rules('required|string|min:2|max:100');
 ```
 
-### createRules
+#### createRules
 `type: string|array`
 
 Add custom validation rules to widget just for create form.
 
-### editRules
+#### editRules
 `type: string|array`
 
 Add custom validation rules to widget just for edit form.
 
-### translation
+#### translation
 `type: bool`
 
 Is this field is a multilingal field or not.

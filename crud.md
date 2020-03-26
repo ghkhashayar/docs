@@ -5,59 +5,31 @@ nav_order: 100
 ![Crud list](./images/screenshots/crud_list.jpg)
 ![Crud form](./images/screenshots/crud_form.jpg)
 
-- [CRUD](#crud)
-  - [Example](#example)
-    - [Step 1](#step-1)
-    - [Step 2](#step-2)
-    - [Step 3](#step-3)
-    - [Step 4](#step-4)
-    - [Step 5](#step-5)
-    - [Step 6](#step-6)
-  - [Methods](#methods)
-  - [properties](#properties)
-    - [model](#model)
-    - [title](#title)
-    - [titles](#titles)
-    - [description](#description)
-    - [icon](#icon)
-    - [creatable](#creatable)
-    - [showable](#showable)
-    - [editable](#editable)
-    - [deletable](#deletable)
-    - [perPages](#perpages)
-    - [perPage](#perpage)
-    - [defaultOrder](#defaultorder)
-    - [defaultOrderDirection](#defaultorderdirection)
-    - [permissionsKey](#permissionskey)
-    - [bulk](#bulk)
-    - [globalSearch](#globalsearch)
-    - [itemFormat](#itemformat)
-    - [defaultCard](#defaultcard)
-    - [defaultDashboardCard](#defaultdashboardcard)
-    - [badge](#badge)
-    - [badgeVariant](#badgevariant)
-  - [init](#init)
-  - [queryScope](#queryscope)
-  - [validationRules](#validationrules)
-  - [validationAttributes](#validationattributes)
-  - [validationMessages](#validationmessages)
-  - [validationAfter](#validationafter)
-  - [modifyRequest](#modifyrequest)
-  - [modifyResonse](#modifyresonse)
-  - [Model Events](#model-events)
+- [Example](#example)
+- [Methods](#methods)
+- [properties](#properties)
+- [init](#init)
+- [queryScope](#queryscope)
+- [validationRules](#validationrules)
+- [validationAttributes](#validationattributes)
+- [validationMessages](#validationmessages)
+- [validationAfter](#validationafter)
+- [modifyRequest](#modifyrequest)
+- [modifyResonse](#modifyresonse)
+- [Model Events](#model-events)
 
 CRUD Controllers are controllers that handle resources Create/Edit/Update/Delete. CRUD Controllers working with a model and list of the model fields that in sanjab we call them Widget. Each widget handling operation like saving, form field, view field, table field, search, sort and etc.
 
 ## Example
 Let's create a sample crud controller step by step. Our sample is a simple **Category** resource that contains name, description, and image.
 
-### Step 1
+#### Step 1
 Create a model and migrations.
 ```bash
 php artisan make:model -m Category
 ```
 
-### Step 2
+#### Step 2
 Fill migration and model.
 ```php
 Schema::create('categories', function (Blueprint $table) {
@@ -80,19 +52,19 @@ class Category extends Model
 }
 ```
 
-### Step 3
+#### Step 3
 Migrate.
 ```bash
 php artisan migrate
 ```
 
-### Step 4
+#### Step 4
 Make Sanjab controllers.
 ```bash
 php artisan sanjab:make:crud CategoryController
 ```
 
-### Step 5
+#### Step 5
 Change the content of `app/Http/Controllers/Admin/Crud/CategoryController.php`.
 
 ```php
@@ -133,7 +105,7 @@ class CategoryController extends CrudController
 }
 ```
 
-### Step 6
+#### Step 6
 Done!
 
 Open `yoursite/admin` and open **Categories** link in sidebar. Your CRUD is ready to use.
@@ -153,108 +125,108 @@ CrudProperties::create(ROUTE)
                 ->property2(value 2)
 ```
 
-### model
+#### model
 `type: string`
 
 Model class name
 
-### title
+#### title
 `type: string`
 
  Title of resource (singular)
 
-### titles
+#### titles
 `type: string`
 
  Title of resource (plural)
 
-### description
+#### description
 `type: string`
 
  Description About controller
 
-### icon
+#### icon
 `type: string`
 
  Material icon name
 
-### creatable
+#### creatable
 `type: bool`
 
  Has creating form
 
-### showable
+#### showable
 `type: bool`
 
  Has resource show action
 
-### editable
+#### editable
 `type: bool`
 
  Has resource edit action
 
-### deletable
+#### deletable
 `type: bool`
 
  Has resource delete action
 
-### perPages
+#### perPages
 `type: array`
 
  Array of possible per-page options (Example: `[5 => 5, 10 => 10, PHP_INT_MAX => "All"]`)
 
-### perPage
+#### perPage
 `type: int`
 
  The default value of `perpages`
 
-### defaultOrder
+#### defaultOrder
 `type: string`
 
  Default order column
 
-### defaultOrderDirection
+#### defaultOrderDirection
 `type: string`
 
  Default order column direction "asc" or "desc"
 
-### permissionsKey
+#### permissionsKey
 `type: string`
 
  Use this when you want to have more than one CRUD controller for a model
 
-### bulk
+#### bulk
 `type: bool`
 
  Bulk actions are allowed or not
 
-### globalSearch
+#### globalSearch
 `type: bool`
 
  Should be shown on global search results or not
 
-### itemFormat
+#### itemFormat
 `type: string`
 
  Format on global search (Example: `%id - %first_name`) default values are (`title` or `name` or
  `id`)
-### defaultCard
+#### defaultCard
 `type: bool`
 
  Enable or disable default count card
 
-### defaultDashboardCard
+#### defaultDashboardCard
 `type: bool`
 
  Enable or disable default count card on dashboard
 
-### badge
+#### badge
 `type: function`
 
  Function to create content of menu item badge (Example: `function () {return Model::where('status',
  0)->count();}`)
 
-### badgeVariant
+#### badgeVariant
 `type: string`
 
  Menu item bootstrap badge variant (Examples: 'success', 'danger', ...)

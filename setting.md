@@ -4,32 +4,20 @@ nav_order: 100
 # Setting
 ![Settings](./images/screenshots/settings.jpg)
 
-- [Setting](#setting)
-  - [Example](#example)
-    - [Step 1](#step-1)
-    - [Step 2](#step-2)
-    - [Step 3](#step-3)
-    - [Step 4](#step-4)
-  - [Using saved settings](#using-saved-settings)
-  - [Set values programmically](#set-values-programmically)
-  - [Alias functions](#alias-functions)
-  - [Methods](#methods)
-  - [properties](#properties)
-    - [key](#key)
-    - [title](#title)
-    - [description](#description)
-    - [icon](#icon)
-    - [globalSearch](#globalsearch)
-    - [badge](#badge)
-    - [badgeVariant](#badgevariant)
-  - [init](#init)
-  - [validationRules](#validationrules)
-  - [validationAttributes](#validationattributes)
-  - [validationMessages](#validationmessages)
-  - [validationAfter](#validationafter)
-  - [modifyRequest](#modifyrequest)
-  - [modifyResonse](#modifyresonse)
-  - [Model Events](#model-events)
+- [Example](#example)
+- [Using saved settings](#using-saved-settings)
+- [Set values programmically](#set-values-programmically)
+- [Alias functions](#alias-functions)
+- [Methods](#methods)
+- [properties](#properties)
+- [init](#init)
+- [validationRules](#validationrules)
+- [validationAttributes](#validationattributes)
+- [validationMessages](#validationmessages)
+- [validationAfter](#validationafter)
+- [modifyRequest](#modifyrequest)
+- [modifyResonse](#modifyresonse)
+- [Model Events](#model-events)
 
 Setting Controllers using to save website settings. settings controllers working with a group name and list of field that called widget.
 
@@ -37,19 +25,19 @@ Setting Controllers using to save website settings. settings controllers working
 Let's create a setting controller step by step and use saved settings in somewhere.
 Our example is a simple setting that holding setting about seo like website title, description, keywords and og:image meta.
 
-### Step 1
+#### Step 1
 Make sure you migrated sanjab settings table.
 ```bash
 php artisan migrate
 ```
 
-### Step 2
+#### Step 2
 Make sanjab setting controller.
 ```bash
 php artisan sanjab:make:setting SeoSettingController
 ```
 
-### Step 3
+#### Step 3
 Change the content of `app/Http/Controllers/Admin/Setting/SeoSettingController.php`
 ```php
 <?php
@@ -79,7 +67,7 @@ class SeoSettingController extends SettingController
 }
 ```
 
-### Step 4
+#### Step 4
 Done!
 
 Open `yoursite/admin` and open **Seo Settings** in **Settings** link in sidebar. Your Setting is ready to use.
@@ -103,7 +91,7 @@ Storage::url(setting('seo.image'));
 You can set setting with `set_setting` function.
 ```php
 set_setting('seo.title', 'edited title');
-setting('seo.title');
+setting('seo.title'); // edited title
 ```
 
 ## Alias functions
@@ -122,38 +110,38 @@ SettingProperties::create(KEY)
                 ->property2(value 2)
 ```
 
-### key
+#### key
 `type: string`
 
 Route and group key of settings.
 
-### title
+#### title
 `type: string`
 
 Title of setting.
 
-### description
+#### description
 `type: string`
 
 Short description about setting.
 
-### icon
+#### icon
 `type: string`
 
 Icon of setting.
 
-### globalSearch
+#### globalSearch
 `type: bool`
 
 Should be present in global search or not.
 
-### badge
+#### badge
 `type: function`
 
 Function to create content of menu item badge (Example: `function () {return Model::where('status',
  0)->count();}`)
 
-### badgeVariant
+#### badgeVariant
 `type: string`
 
 Menu badge bootstrap variant. (Example: success, danger, ...)

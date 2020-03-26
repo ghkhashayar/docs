@@ -5,14 +5,9 @@ has_toc: false
 ---
 # Cards
 
-- [Cards](#cards)
-  - [Create a card](#create-a-card)
-  - [Base properties](#base-properties)
-    - [tag](#tag)
-    - [cols](#cols)
-    - [title](#title)
-    - [order](#order)
-  - [Availble cards](#availble-cards)
+- [Create a card](#create-a-card)
+- [Base properties](#base-properties)
+- [Availble cards](#availble-cards)
 
 Cards are classes that showing any block in dashboard or crud.
 
@@ -29,16 +24,16 @@ $this->cards[] = StatsCard::create('Products')
 
 ## Base properties
 
-### tag
+#### tag
 Card tag.
 
-### cols
+#### cols
 Bootstrap column based size.
 
-### title
+#### title
 Title of card.
 
-### order
+#### order
 Order of card in cards.
 
 ## Availble cards
