@@ -2,7 +2,7 @@
 /**
  * Get images from unsplash API and put to json file.
  *
- * https://github.com/sanjabteam/sanjabteam
+ * https://github.com/sanjabteam/sanjabteam.github.io
  */
 
 
