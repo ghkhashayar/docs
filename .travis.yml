@@ -12,5 +12,6 @@ deploy:
   github_token: $GITHUB_TOKEN
   keep_history: true
   repo: sanjabteam/sanjabteam.github.io
+  target_branch: master
   on:
     branch: master

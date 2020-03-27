@@ -31,5 +31,15 @@ module.exports = {
         editLinkText: 'Help us improve this page!',
         smoothScroll: true,
         footer: 'Copyright © 2020 Laravel Sanjab'
+    },
+    plugins: {
+      'sitemap': {
+        hostname: 'http://sanjabteam.github.io/'
+      },
+      '@vuepress/back-to-top': {},
+      'seo': {},
+      'check-md': {},
+      'img-lazy': {},
+      'vuepress-plugin-code-copy': {}
     }
 };

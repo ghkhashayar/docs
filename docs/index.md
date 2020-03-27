@@ -5,7 +5,7 @@ next: false
 sidebarDepth: 0
 ---
 # Sanjab
-Sanjab is an admin package for laravel.
+Sanjab is an admin panel package for laravel.
 
 Sanjab let you create an extendiable admin panel as fast as possible with pure code.
 
