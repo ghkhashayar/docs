@@ -39,7 +39,6 @@ module.exports = {
       '@vuepress/back-to-top': {},
       'seo': {},
       'check-md': {},
-      'img-lazy': {},
       'vuepress-plugin-code-copy': {}
     }
 };
