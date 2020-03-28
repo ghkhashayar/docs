@@ -411,7 +411,9 @@ Example:
 // password saving example
 public function store(Request $request, Model $item)
 {
-    $item->{ $this->property("name") } = bcrypt($request->input($this->property("name")));
+    if ($request->filled($this->property("name"))) {
+        $item->{ $this->property("name") } = bcrypt($request->input($this->property("name")));
+    }
 }
 ```
 
