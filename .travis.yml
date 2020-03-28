@@ -3,10 +3,10 @@ node_js:
   - lts/*
 install:
   - npm install
-  - mkdir docs/.vuepress/dist/unsplash -p
-  - cp unsplash/images.json docs/.vuepress/dist/unsplash/images.json
 script:
   - npm run docs:build
+  - mkdir docs/.vuepress/dist/unsplash -p
+  - cp unsplash/images.json docs/.vuepress/dist/unsplash/images.json
 deploy:
   provider: pages
   skip_cleanup: true
