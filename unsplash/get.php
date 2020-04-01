@@ -49,7 +49,7 @@ foreach ($images as $key => $image) {
         'image' => $image['urls']['regular'],
     ];
 }
-$file = fopen('images.json', 'w');
+$file = fopen(__DIR__.'/../docs/.vuepress/public/unsplash/images.json', 'w');
 fwrite($file, json_encode($images, JSON_PRETTY_PRINT));
 fclose($file);
 echo "Response saved in images.json";

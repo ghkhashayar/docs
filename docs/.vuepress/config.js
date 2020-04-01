@@ -35,6 +35,7 @@ module.exports = {
         editLinks: true,
         editLinkText: "Help us improve this page!",
         smoothScroll: true,
+        logo: '/images/logo.svg',
         footer: "Copyright © 2020 Laravel Sanjab",
         algolia: {
             apiKey: "242063787eaf1a4d203bc3526e5d430a",
@@ -49,5 +50,8 @@ module.exports = {
         seo: {},
         "check-md": {},
         "vuepress-plugin-code-copy": {}
-    }
+    },
+    head: [
+        ['link', { rel: 'icon', href: '/images/favicon.ico' }]
+    ]
 };
