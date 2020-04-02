@@ -1,5 +1,5 @@
 # BelongsTo Relation Widget
-![BelongsTo Picker](../../images/screenshots/widgets/belongs-to-picker.jpg)
+![BelongsTo Picker](../images/screenshots/widgets/belongs-to-picker.jpg)
 
 Select box to handle eloquent BelongsTo relation.
 
