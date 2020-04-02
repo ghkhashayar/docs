@@ -14,7 +14,7 @@ $this->widgets[] = TagWidget::create('tags', 'Post Tags')
 ## Properties
 
 ### asArray
-`type: bool`
+`type: boolean`
 
 You also can store tags as array in database. just enabled this option.
 

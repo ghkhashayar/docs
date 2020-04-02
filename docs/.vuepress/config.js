@@ -16,6 +16,7 @@ module.exports = {
                 children: glob
                     .sync("docs/widgets/*.md")
                     .map(f => f.replace(/^docs/, ""))
+                    .filter(f => !['/widgets/relation.md'].includes(f))
             },
             {
                 path: "/cards",
@@ -27,6 +28,9 @@ module.exports = {
             "/localization",
             "/authorization",
             "/compile"
+        ],
+        nav: [
+            { text: 'Discussion', link: 'https://discord.gg/kwuTZQd' },
         ],
         repo: "sanjabteam/sanjab",
         docsRepo: "https://github.com/sanjabteam/sanjabteam.github.io",

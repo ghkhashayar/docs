@@ -1,5 +1,5 @@
 # Setting
-![Settings](./images/screenshots/settings.jpg)
+![Settings](/images/screenshots/settings.jpg)
 
 - [Example](#example)
 - [Using saved settings](#using-saved-settings)
@@ -128,7 +128,7 @@ Short description about setting.
 Icon of setting.
 
 #### globalSearch
-`type: bool`
+`type: boolean`
 
 Should be present in global search or not.
 

@@ -12,7 +12,7 @@ $this->widgets[] = TextListWidget::create('field', 'Label');
 ## Properties
 
 ### unique
-`type: bool`
+`type: boolean`
 
 should each item be unique or not. By default it's enabled and you can disable it.
 ```php

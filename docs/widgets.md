@@ -180,7 +180,7 @@ Add custom validation rules to widget just for create form.
 Add custom validation rules to widget just for edit form.
 
 #### translation
-`type: bool`
+`type: boolean`
 
 Is this field is a multilingal field or not.
 
@@ -190,27 +190,29 @@ $this->widgets[] = TextWidget::create('name')
 ```
 
 ## Availble widgets
-* [TextWidget](./widgets/text.md)
-* [TextAreaWidget](./widgets/textarea.md)
-* [TextListWidget](./widgets/text-list.md)
-* [TagWidget](./widgets/tag.md)
-* [ShowWidget](./widgets/show.md)
-* [SelectWidget](./widgets/select.md)
-* [PasswordWidget](./widgets/password.md)
-* [NumberWidget](./widgets/number.md)
-* [MapWidget](./widgets/map.md)
-* [ItemListWidget](./widgets/item-list.md)
-* [IdWidget](./widgets/id.md)
-* [FontAwesomeWidget](./widgets/fontawesome.md)
 * [CheckboxWidget](./widgets/checkbox.md)
 * [CheckboxWidgetGroup](./widgets/checkbox-group.md)
 * [ColorWidget](./widgets/color.md)
+* [FontAwesomeWidget](./widgets/fontawesome.md)
+* [IdWidget](./widgets/id.md)
+* [ItemListWidget](./widgets/item-list.md)
+* [MapWidget](./widgets/map.md)
+* [NumberWidget](./widgets/number.md)
+* [PasswordWidget](./widgets/password.md)
+* [SelectWidget](./widgets/select.md)
+* [ShowWidget](./widgets/show.md)
+* [TagWidget](./widgets/tag.md)
+* [TextAreaWidget](./widgets/textarea.md)
+* [TextListWidget](./widgets/text-list.md)
+* [TextWidget](./widgets/text.md)
 * Wysiwyg editors
   * [EditorJsWidget](./widgets/editorjs.md)
   * [QuillWidget](./widgets/quill.md)
 * File
   * [Uppy](./widgets/uppy.md)
   * [elFinder](./widgets/elfinder.md)
+* Relational
+  * [BelongsTo]('./widgets/belongs-to-picker.md')
 
 ## Extending widgets
 First you should prepare your project for [Custom Compile](./compile.md).

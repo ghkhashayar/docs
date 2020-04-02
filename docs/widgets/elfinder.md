@@ -52,7 +52,7 @@ File validation rules.
 ```
 
 ### multiple
-`type: bool`
+`type: boolean`
 
 Allow to upload multiple files.
 ```php

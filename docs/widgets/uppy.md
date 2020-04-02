@@ -94,7 +94,7 @@ $y: y distance from edge
 > Will not work if you use custom `fileStoreCallBack`
 
 ### multiple
-`type: bool`
+`type: boolean`
 
 Allow to upload multiple files.
 ```php

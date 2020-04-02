@@ -1,6 +1,6 @@
 # CRUD
-![Crud list](./images/screenshots/crud_list.jpg)
-![Crud form](./images/screenshots/crud_form.jpg)
+![Crud list](/images/screenshots/crud.jpg)
+![Crud form](/images/screenshots/crud_form.jpg)
 
 - [Example](#example)
 - [Methods](#methods)
@@ -148,22 +148,22 @@ Model class name
  Material icon name
 
 #### creatable
-`type: bool`
+`type: boolean`
 
  Has creating form
 
 #### showable
-`type: bool`
+`type: boolean`
 
  Has resource show action
 
 #### editable
-`type: bool`
+`type: boolean`
 
  Has resource edit action
 
 #### deletable
-`type: bool`
+`type: boolean`
 
  Has resource delete action
 
@@ -193,12 +193,12 @@ Model class name
  Use this when you want to have more than one CRUD controller for a model
 
 #### bulk
-`type: bool`
+`type: boolean`
 
  Bulk actions are allowed or not
 
 #### globalSearch
-`type: bool`
+`type: boolean`
 
  Should be shown on global search results or not
 
@@ -208,12 +208,12 @@ Model class name
  Format on global search (Example: `%id - %first_name`) default values are (`title` or `name` or
  `id`)
 #### defaultCard
-`type: bool`
+`type: boolean`
 
  Enable or disable default count card
 
 #### defaultDashboardCard
-`type: bool`
+`type: boolean`
 
  Enable or disable default count card on dashboard
 
