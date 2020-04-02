@@ -17,6 +17,8 @@ sidebarDepth: 0
         spaceBetween: 30,
         effect: 'fade',
         loop: true,
+        preloadImages: false,
+        lazy: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true
@@ -29,12 +31,24 @@ sidebarDepth: 0
             delay: 4000,
         },
     }">
-    <swiper-slide><img src="/images/screenshots/crud.jpg" /></swiper-slide>
-    <swiper-slide><img src="/images/screenshots/crud_form.jpg" /></swiper-slide>
-    <swiper-slide><img src="/images/screenshots/login.jpg" /></swiper-slide>
-    <swiper-slide><img src="/images/screenshots/settings.jpg" /></swiper-slide>
-    <swiper-slide><img src="/images/screenshots/ticket.jpg" /></swiper-slide>
-    <swiper-slide><img src="/images/screenshots/ticket_messages.jpg" /></swiper-slide>
+    <swiper-slide>
+        <img data-src="/images/screenshots/crud.jpg" class="swiper-lazy" />
+    </swiper-slide>
+    <swiper-slide>
+        <img data-src="/images/screenshots/crud_form.jpg" class="swiper-lazy" />
+    </swiper-slide>
+    <swiper-slide>
+        <img data-src="/images/screenshots/login.jpg" class="swiper-lazy" />
+    </swiper-slide>
+    <swiper-slide>
+        <img data-src="/images/screenshots/settings.jpg" class="swiper-lazy" />
+    </swiper-slide>
+    <swiper-slide>
+        <img data-src="/images/screenshots/ticket.jpg" class="swiper-lazy" />
+    </swiper-slide>
+    <swiper-slide>
+        <img data-src="/images/screenshots/ticket_messages.jpg" class="swiper-lazy" />
+    </swiper-slide>
     <div class="swiper-pagination swiper-pagination-white" slot="pagination"></div>
     <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
     <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
