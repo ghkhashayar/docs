@@ -10,12 +10,12 @@ Authorization in sanjab is based on [Bouncer](https://github.com/JosephSilber/bo
 You can set permissions for roles in Roles panel.
 
 ## Creating a Super Admin
-Super admin is root admin that can set roles/permissions for other users.
+Super admin is a root admin that can set roles/permissions for other users.
 To create a new super admin run following command.
 ```bash
 php artisan sanjab:make:admin
 ```
-Command will ask you email of user to convert an existing user to super admin.
+Command will ask you the email of the user to convert an existing user to super admin.
 
 ## Seeding Database
 You can create roles/permissions with [database seeders](https://laravel.com/docs/seeding). check [Bouncer docs](https://github.com/JosephSilber/bouncer) for more informations.
@@ -77,7 +77,7 @@ class ArticlePolicy
 ```
 
 ## Custom Permissions
-If you want define your custom permission be editable on roles panel then go to `AppServiceProvider.php` and use following function to submit your custom permission.
+If you want to define your custom permission be editable on roles panel then go to `AppServiceProvider.php` and use the following function to submit your custom permission.
 
 ```php
 use Sanjab;
@@ -96,7 +96,7 @@ class AppServiceProvider extends ServiceProvider
 }
 ```
 
-You can also set order in check box groups.
+You can also set order in checkbox groups.
 
 #### order
 `type: int`

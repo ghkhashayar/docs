@@ -1,7 +1,10 @@
+---
+sidebarDepth: 0
+---
 # Number Widget
 ![Number widget](../images/screenshots/widgets/number.jpg)
 
-A simple number input.
+A simple input for numbers.
 
 ## Sample
 ```php
@@ -13,7 +16,7 @@ $this->widgets[] = NumberWidget::create('age', 'Your age')
                             ->max(120);
 ```
 
-You also should define `$casts` in you'r model.
+You also should define `$casts` in your model.
 ```php
 protected $casts = [
     'age' => 'int'
@@ -35,4 +38,4 @@ maximum value.
 ### step
 `type: number`
 
-prection or each step of number.
+the precision of each step of the number.

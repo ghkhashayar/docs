@@ -1,3 +1,6 @@
+---
+sidebarDepth: 0
+---
 # Password Widget
 ![Password widget](../images/screenshots/widgets/password.jpg)
 

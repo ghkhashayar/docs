@@ -1,5 +1,8 @@
+---
+sidebarDepth: 0
+---
 # Stats Card
-![Checkbox group](../images/screenshots/cards/stats.jpg)
+![Stats Card](../images/screenshots/cards/stats.jpg)
 
 
 A simple card showing a number.
@@ -24,7 +27,7 @@ A title in footer.
 ### footerIcon
 `type: string`
 
-Material icon in footer.
+A material icon in the footer.
 
 ### link
 `type: string`
@@ -34,7 +37,7 @@ Url of card
 ### value
 `type: callable|mixed`
 
-Value showing in card.
+Value showing in the card.
 
 > Highly recommended to use callback instead of raw value inorder to prevent extra database queries.
 ```php
@@ -52,4 +55,3 @@ Card icon
 `type: string`
 
 Card bootstrap variant (Examples: 'success', 'danger', ...).
-

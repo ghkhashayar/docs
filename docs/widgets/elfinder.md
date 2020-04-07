@@ -1,3 +1,6 @@
+---
+sidebarDepth: 0
+---
 # Elfinder widget
 ![Elfinder widget](../images/screenshots/widgets/elfinder_widget.jpg)
 
@@ -23,12 +26,12 @@ $this->widgets[] = ElFinderWidget::create('manual', 'Manual')
 ### min
 `type: number`
 
-minimum number of files.
+the minimum number of files.
 
 ### max
 `type: number`
 
-maximum number of files.
+the maximum number of files.
 
 ### maxSize
 `type: number`
@@ -40,7 +43,7 @@ maximum size of each file in KiloBytes.
 
 default: `'public'`
 
-Disk name to show in file manager.
+Disk name to show in the file manager.
 
 ### fileRules
 `type: string | array`
@@ -66,6 +69,3 @@ protected $casts = [
     'images' => 'array'
 ];
 ```
-
-
-

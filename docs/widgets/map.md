@@ -1,3 +1,6 @@
+---
+sidebarDepth: 0
+---
 # Map Widget
 ![Map widget](../images/screenshots/widgets/map.jpg)
 
@@ -9,8 +12,8 @@ use Sanjab\Widgets\MapWidget;
 
 $this->widgets[] = MapWidget::create('address', 'Address');
 ```
-Each map widget a latitude field and a longitude field.
-For above example you need two fields.
+Each map widget has a latitude field and a longitude field.
+For the above example, you need two fields.
 
 `address_lat` and `address_lng`.
 

@@ -1,3 +1,6 @@
+---
+sidebarDepth: 0
+---
 # Uppy widget
 ![Uppy widget](../images/screenshots/widgets/uppy.jpg)
 
@@ -26,12 +29,12 @@ $this->widgets[] = UppyWidget::create('manual', 'Manual')
 ### min
 `type: number`
 
-minimum number of files.
+the minimum number of files.
 
 ### max
 `type: number`
 
-maximum number of files.
+the maximum number of files.
 
 ### maxSize
 `type: number`
@@ -43,9 +46,9 @@ maximum size of each file in KiloBytes.
 
 default: `'public'`
 
-Disk name to show in file manager.
+Disk name to store uploaded file on that.
 
-> Will not work if you use custom `fileStoreCallBack`
+> Does not work if you use custom `fileStoreCallBack`
 
 ### directory
 `type: string`
@@ -68,16 +71,16 @@ File validation rules.
 ### width
 `type: int`
 
-resize width for images only.
+resize the width for images only.
 
-> Will not work if you use custom `fileStoreCallBack`
+> Does not work if you use custom `fileStoreCallBack`
 
 ### height
 `type: int`
 
-resize width for images only.
+resize the width for images only.
 
-> Will not work if you use custom `fileStoreCallBack`
+> Does not work if you use custom `fileStoreCallBack`
 
 ### watermark($watermark, string $position = 'top-left', int $x = 0, int $y = 0)
 
@@ -85,13 +88,13 @@ Insert watermark to images.
 
 $watermark: Path of watermark file or instance of `Intervention\Image\Image`.
 
-$position: position of watermark
+$position: the position of the watermark
 
-$x: x distance from edge
+$x: x distance from the edge
 
-$y: y distance from edge
+$y: y distance from the edge
 
-> Will not work if you use custom `fileStoreCallBack`
+> Does not work if you use custom `fileStoreCallBack`
 
 ### multiple
 `type: boolean`
@@ -111,7 +114,7 @@ protected $casts = [
 
 ### fileStoreCallBack
 
-Callback to save uploaded file to disk.
+Callback to save uploaded files to disk.
 
 Example: just a simple save.
 

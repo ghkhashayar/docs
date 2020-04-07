@@ -1,7 +1,10 @@
+---
+sidebarDepth: 0
+---
 # Item List Widget
 ![Item list widget](../images/screenshots/widgets/item-list.jpg)
 
-This widget using to store array of fields.
+This widget used to store an array of fields.
 
 ## Sample
 ```php
@@ -14,14 +17,14 @@ $this->widgets[] = ItemListWidget::create('gallery')
     ->addWidget(UppyWidget::image('image')->required());
 ```
 
-You also should define `$casts` in you'r model.
+You also should define `$casts` in your model.
 ```php
 protected $casts = [
     'gallery' => 'array'
 ];
 ```
 
-and result will would be something like this.
+and the result will be something like this.
 ```php
 [
   [
@@ -35,4 +38,4 @@ and result will would be something like this.
 ]
 ```
 
-You can use `addWidget` to add one widget or `addWidgets` to add array of widgets.
+You can use `addWidget` to add one widget or `addWidgets` to add an array of widgets.

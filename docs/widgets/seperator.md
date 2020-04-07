@@ -1,3 +1,6 @@
+---
+sidebarDepth: 0
+---
 # Seperator Widget
 
 A simple horizontal line with a text.

@@ -1,7 +1,10 @@
+---
+sidebarDepth: 0
+---
 # Checkbox Group Widget
 ![Checkbox group](../images/screenshots/widgets/checkbox_group.jpg)
 
-Group of checkboxes that storing as array.
+Group of checkboxes that storing as an array.
 
 ## Sample
 ```php
@@ -13,7 +16,7 @@ $this->widgets[] = CheckboxGroupWidget::create('abilities')
     ->addOption('comment', 'Comment');
 ```
 
-You also should define `$casts` in you'r model.
+You also should define `$casts` in your model.
 ```php
 protected $casts = [
     'abilities' => 'array'

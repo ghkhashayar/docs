@@ -1,3 +1,6 @@
+---
+sidebarDepth: 0
+---
 # ID Widget
 
 A widget to show id.

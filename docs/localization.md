@@ -1,18 +1,18 @@
 # Localization
 
 - [Languages](#languages)
-- [Multilingal CRUD](#multilingal-crud)
+- [Multilingual CRUD](#multilingual-crud)
   - [Example](#example)
-- [Multilingal Setting](#multilingal-setting)
+- [Multilingual Setting](#multilingual-setting)
   - [Access To setting values](#access-to-setting-values)
-  - [Set settings programmically](#set-settings-programmically)
+  - [Set settings programmatically](#set-settings-programmatically)
 
-You can have multilingal inputs for your models and settings.
+You can have multilingual inputs for your models and settings.
 
-Multilingal is based on [Laravel Translatable](https://github.com/Astrotomic/laravel-translatable).
+Multilingual is based on [Laravel Translatable](https://github.com/Astrotomic/laravel-translatable).
 
 ## Languages
-To set availble languages for translation you should change `locales` in `config/sanjab.php`:
+To set available languages for translation you should change `locales` in `config/sanjab.php`:
 
 ```php
 'locales' => [
@@ -37,16 +37,16 @@ and in `config/translatable.php`:
 ],
 ```
 
-> Note: Diffrence between `config/translatable.php` and `config/sanjab.php`.
+> Note: Difference between `config/translatable.php` and `config/sanjab.php`.
 >
 > in `config/translatable.php` you should just set locale codes, but in `config/sanjab.php` you should set locale code and locale title in array key and value. ('locale_code' => 'Locale Title').
 
 
-## Multilingal CRUD
+## Multilingual CRUD
 
 As mentioned in [Laravel Translatable](https://github.com/Astrotomic/laravel-translatable) docs you need two models.
 
-one for non-multilingal attributes and one for multilingal attributes. these has one-to-many relationship.
+one for non-multilingual attributes and one for multilingual attributes. these have a one-to-many relationship.
 
 ### Example
 
@@ -103,7 +103,7 @@ Schema::create('category_translations', function (Blueprint $table) {
 
 ```
 
-Now all you need to do on CRUD controller is specify translated widgets with `translation` property.
+Now all you need to do on the CRUD controller is specify translated widgets with `translation` property.
 
 CategoryController.php:
 
@@ -135,9 +135,9 @@ class CategoryController extends CrudController
 }
 ```
 
-## Multilingal Setting
-In setting controllers you don't need to be worry about anything.
-Just add translation to multilingal properties.
+## Multilingual Setting
+In setting controllers you don't need to worry about anything.
+Just add translation to multilingual properties.
 
 ### Access To setting values
 
@@ -145,16 +145,16 @@ Just add translation to multilingal properties.
 setting('group.name') // Just like a normal setting
 ```
 
-Access with specific locale, you should pass locale as third parameter.
+Access with specific locale, you should pass locale as the third parameter.
 
 ```php
 setting('group.name', 'Default Value', 'fa') // سلام
 setting('group.name', 'Default Value', 'en') // Hello
 ```
 
-### Set settings programmically
+### Set settings programmatically
 
-To set a multilingal setting you should pass locale as third parameter.
+To set a multilingual setting you should pass locale as the third parameter.
 
 ```php
 setting('group.name', 'سلام', 'fa')

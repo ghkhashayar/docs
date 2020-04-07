@@ -1,7 +1,10 @@
+---
+sidebarDepth: 0
+---
 # Has Many Relation Widget
 ![HasMany Widget](../images/screenshots/widgets/item-list.jpg)
 
-HasMany is list of entities with HasMany relation. interface and functionality is look like [ItemListWidget](./item-list.md) but for HasMany relation instead of array.
+HasMany is a list of entities with HasMany relation. interface and functionality is look like [ItemListWidget](./item-list.md) but for HasMany relation instead of array.
 
 ## Sample
 ```php
@@ -30,4 +33,4 @@ public function prices()
 }
 ```
 
-You can use `addWidget` to add one widget or `addWidgets` to add array of widgets.
+You can use `addWidget` to add one widget or `addWidgets` to add an array of widgets.

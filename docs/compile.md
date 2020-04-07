@@ -1,6 +1,6 @@
 # Custom compile
 
-Sanjab is based on [vue.js](https://vuejs.org) and some awesome libraries added to it to make it powerfull. but still not enough. You may need special javascript libraries or maybe you want to edit styles. to do that you need little knowledge about [laravel mix](http://laravel.com/docs/mix) and then compile sanjab yourself with your customizations.
+Sanjab is based on [vue.js](https://vuejs.org) and some awesome libraries added to it to make it powerful. but still not enough. You may need special javascript libraries or maybe you want to edit styles. to do that you need little knowledge about [laravel mix](http://laravel.com/docs/mix) and then compile sanjab yourself with your customizations.
 
 ## Step 1
 Install npm packages including laravel mix.
@@ -16,14 +16,14 @@ Install the sanjab npm package.
 npm install sanjab --save-dev
 ```
 
-> You should install the same version of the composer package if you don't have latest version.
+> You should install the same version of the composer package if you don't have the latest version.
 
 ```bash
 npm install sanjab@VERSION --save-dev
 ```
 
 ## Step 3
-Create JS and SCSS file.
+Create JS and SCSS files.
 
 > You also can create/compile one of javascript or SCSS only.
 

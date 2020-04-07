@@ -1,3 +1,6 @@
+---
+sidebarDepth: 0
+---
 # Checkbox Widget
 ![Checkbox widget](../images/screenshots/widgets/checkbox.jpg)
 
@@ -10,7 +13,7 @@ use Sanjab\Widgets\CheckboxWidget;
 $this->widgets[] = CheckboxWidget::create('published');
 ```
 
-You also should define `$casts` in you'r model.
+You also should define `$casts` in your model.
 ```php
 protected $casts = [
     'published' => 'bool'
@@ -20,40 +23,40 @@ protected $casts = [
 ## Properties
 
 
-fastChange
+### fastChange
 
 `type: boolean`
 
-change checkbox on index. if you enable this you can directly change checkbox value in list.
+change checkbox on the index. if you enable this you can directly change checkbox value on the list.
 
-fastChangeTimestamps
+### fastChangeTimestamps
 
 `type: boolean`
 
-changing timestamp update on fast change or not.
+Should fast change touch the updated_at column or not.
 
-fastChangeBefore
+### fastChangeBefore
 
 `type: callable`
 
-callback before fast change saving in fastchange.
+callback before fast change saving in fast change.
 parameters : (Model $item)
 
-fastChangeAfter
+### fastChangeAfter
 
 `type: callable`
 
 callback call after fast change saved.
 parameters: (Model $item)
 
-fastChangeController
+### fastChangeController
 
 `type: string`
 
 controller to use with fast change.
 > this will fill automatically by [CrudControllers](../crud.md).
 
-fastChangeControllerAuthorize
+### fastChangeControllerAuthorize
 
 `type: callable`
 
@@ -65,14 +68,14 @@ authorize fast change. parameters(Model $item)
 })
 ```
 
-fastChangeControllerAction
+### fastChangeControllerAction
 
 `type: callable`
 
 controller to use with fast change.
 > this will fill automatically by [CrudControllers](../crud.md).
 
-fastChangeControllerItem
+### fastChangeControllerItem
 
 `type: Model`
 

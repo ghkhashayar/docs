@@ -115,7 +115,7 @@ If you don't see link make sure your controller has been added to `controllers` 
 ```php
 protected static function properties(): CrudProperties
 ```
-This function returns CRUD controller properties. and should return an instance of `Sanjab\Helpers\CrudProperties` with all properties that needs to override.
+This function returns CRUD controller properties. and should return an instance of `Sanjab\Helpers\CrudProperties` with all properties that need to override.
 ```php
 CrudProperties::create(ROUTE)
                 ->property1(value 1)
@@ -215,7 +215,7 @@ Model class name
 #### defaultDashboardCard
 `type: boolean`
 
- Enable or disable default count card on dashboard
+ Enable or disable default count card on the dashboard
 
 #### badge
 `type: function`
@@ -241,11 +241,11 @@ You can define controller `Widgets`, `Cards` and `Actions` in this function.
 
 *$type*
 
-type of action currenly loading.
+type of action currently loading.
 
 possible values:
 - index: The Resource list
-- create: Showing create form or creating the model
+- create: Showing the create form or creating the model
 - show: Show resource
 - edit: Showing edit form or updating model
 - action: When calling any actions
@@ -392,4 +392,4 @@ protected function onSaving(\Illuminate\Database\Eloquent\Model $item)
     }
 }
 ```
-Above example will clear cached data when any change happended and also will fill name field with 'Default' value if user did not filled name field.
+The above example will clear cached data when any change happened and also will fill the name field with 'Default' value if the user did not fill the name field.

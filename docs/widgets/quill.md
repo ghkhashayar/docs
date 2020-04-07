@@ -1,7 +1,10 @@
+---
+sidebarDepth: 0
+---
 # Quill editor widget
 ![Quill widget](../images/screenshots/widgets/quill.jpg)
 
-A [Quill](https://github.com/quilljs/quill) wysiwyg input field.
+A WYSIWYG editor based on [Quill](https://github.com/quilljs/quill)Wysiwyg.
 
 ## Sample
 ```php

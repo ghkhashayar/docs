@@ -1,17 +1,17 @@
 # Installation
 
 ## Requirements
-* PHP 7.1.3+
+* PHP 7.2.5+
 * Laravel 6.0
 * Composer
 * NPM and Laravel Mix (optional)
 
 ## Install using composer
 
-1. Open your laravel project directory in terminal.
+1. Open your laravel project directory in the terminal/CMD.
 
 
-2. Use composer command to install sanjab on your project.
+2. Use the composer command to install sanjab on your project.
 ```bash
 composer require sanjabteam/sanjab
 ```
@@ -34,14 +34,14 @@ class User extends Authenticatable
 ```
 
 
-4. Migrate database.
+4. Run migrate command.
 
 ```bash
 php artisan migrate
 ```
 
 
-5. Create new user.
+5. Create a new user.
 
 ```bash
 php artisan tinker
@@ -63,7 +63,7 @@ php artisan sanjab:make:admin --user=test@test.com
 7. Open `yourwebsite.local/admin` to login to the admin panel.
 
 
-8. Congratulations! you installed sanjab admin panel successfully!
+8. Congratulations! you installed the sanjab admin panel successfully!
 
 ## Configuration
 
@@ -78,8 +78,8 @@ if you want to delete a controller or change class name you should update this t
 note that artisan commands like `sanjab:make:crud` will add controller automatically to this.
 
 ### locales
-Locales availble for multilingal inputs.
-Keys are iso code and values are label of language.
+Locales that available for multilingual inputs.
+Keys are iso code and values are the label of language.
 ```php
 [
     'en' => 'English',
@@ -90,9 +90,9 @@ Keys are iso code and values are label of language.
 ```
 
 ### login
-By default sanjab uses email as login form input. but if you want use something else you can change this config.
+By default, sanjab uses email as a login form input. but if you want to use something else you can change this config.
 
-For example if you want mobile instead of email change like this.
+For example, if you want mobile instead of email change like this.
 
 ```php
 'login' => [
@@ -101,7 +101,7 @@ For example if you want mobile instead of email change like this.
 ]
 ```
 
-Also you can enable/disable recaptcha in login form.
+Also, you can enable/disable ReCaptcha in the login form.
 ```php
 
 'login' => [
@@ -109,15 +109,15 @@ Also you can enable/disable recaptcha in login form.
 ]
 ```
 
-### recaptcha
-Before using recaptcha you should get your recaptcha `sitekey` and `secretkey` from [Google Recaptcha](https://www.google.com/recaptcha).
+### ReCaptcha
+Before using ReCaptcha you should get your ReCaptcha `sitekey` and `secretkey` from [Google Recaptcha](https://www.google.com/recaptcha).
 then you should define these in your `.env` file.
 ```env
 RECAPTCHA_SITE_KEY=YOUR SITE KEY HERE
 RECAPTCHA_SECRET_KEY=YOUR SECRET KEY HERE
 ```
 
-By default you don't need to pass recaptcha. if you want to disable this feature change `ignore_on_debug` to `false`.
+By default, you don't need to pass ReCaptcha. if you want to disable this feature change `ignore_on_debug` to `false`.
 ```php
 'recaptcha' => [
     'ignore_on_debug' => false
@@ -140,8 +140,8 @@ Possible values are:'red','pink','purple','deep-purple','indigo','blue', 'light-
 ### elfinder
 [Elfinder](https://github.com/Studio-42/elFinder) file manager.
 
-* enabled: Should filemanager availble in sidebar
-* disks: Array of [disks](https://laravel.com/docs/filesystem) that should be availble in filemanager.
+* enabled: Should file manager be available in sidebar
+* disks: Array of [disks](https://laravel.com/docs/filesystem) that should be available in the file manager.
 ```php
 'disks' => [
     'public' => 'Uploads',

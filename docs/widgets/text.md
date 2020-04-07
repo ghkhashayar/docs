@@ -1,3 +1,6 @@
+---
+sidebarDepth: 0
+---
 # Text Widget
 ![Text widget](../images/screenshots/widgets/text.jpg)
 

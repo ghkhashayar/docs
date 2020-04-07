@@ -1,7 +1,10 @@
+---
+sidebarDepth: 0
+---
 # Text List Widget
 ![Text list widget](../images/screenshots/widgets/text-list.jpg)
 
-List of simple text input.
+List of strings with a simple text input.
 
 ## Sample
 ```php

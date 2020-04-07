@@ -16,20 +16,20 @@
 - [modifyResonse](#modifyresonse)
 - [Model Events](#model-events)
 
-Setting Controllers using to save website settings. settings controllers working with a group name and list of field that called widget.
+Setting Controllers using to save website settings. settings controllers working with a group name and list of the field that called a widget.
 
 ## Example
-Let's create a setting controller step by step and use saved settings in somewhere.
-Our example is a simple setting that holding setting about seo like website title, description, keywords and og:image meta.
+Let's create a setting controller step by step and use saved settings somewhere.
+Our example is a simple setting that holding settings about SEO like website title, description, keywords, and og:image meta.
 
 #### Step 1
-Make sure you migrated sanjab settings table.
+Make sure you migrated the sanjab settings table.
 ```bash
 php artisan migrate
 ```
 
 #### Step 2
-Make sanjab setting controller.
+Make a sanjab setting controller.
 ```bash
 php artisan sanjab:make:setting SeoSettingController
 ```
@@ -100,7 +100,7 @@ if `setting` or `set_setting` function defined before you can use `sanjab_settin
 ```php
 protected static function properties(): SettingProperties
 ```
-This function returns Setting controller properties. and should return an instance of `Sanjab\Helpers\SettingProperties` with all properties that needs to override.
+This function returns Setting controller properties. and should return an instance of `Sanjab\Helpers\SettingProperties` with all properties that need to override.
 ```php
 SettingProperties::create(KEY)
                 ->property1(value 1)
@@ -120,7 +120,7 @@ Title of setting.
 #### description
 `type: string`
 
-Short description about setting.
+Short description of the setting.
 
 #### icon
 `type: string`

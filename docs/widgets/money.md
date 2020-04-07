@@ -1,3 +1,6 @@
+---
+sidebarDepth: 0
+---
 # Money Widget
 ![Money widget](../images/screenshots/widgets/money.jpg)
 
@@ -33,12 +36,12 @@ maximum value.
 ### decimal
 `type: string`
 
-what character should be used for decimal seperator.
+what character should be used for decimal separator.
 
 ### thousands
 `type: string`
 
-what character should be used for thousands seperator.
+what character should be used for the thousands separator.
 
 ### prefix
 `type: string`
@@ -57,7 +60,7 @@ Any text after money input. (like currency)
 ### precision
 `type: number`
 
-prection of money input.
+the precision of money input.
 
 ```php
 ->precision(0)

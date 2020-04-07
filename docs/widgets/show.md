@@ -1,6 +1,9 @@
+---
+sidebarDepth: 0
+---
 # Show Widget
 
-A simple just for view field. This recommended to use with [Eloquent Mutators](https://laravel.com/docs/eloquent-mutators#accessors-and-mutators).
+A simple just for view field value. This recommended using with [Eloquent Mutators](https://laravel.com/docs/eloquent-mutators#accessors-and-mutators).
 
 ## Sample
 ```php

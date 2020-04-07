@@ -1,7 +1,10 @@
+---
+sidebarDepth: 0
+---
 # Select Widget
 ![Select widget](../images/screenshots/widgets/select.jpg)
 
-A [Vue Select](https://vue-select.org/) input field.
+A Selectbox input based on [Vue Select](https://vue-select.org/).
 
 ## Sample
 ```php

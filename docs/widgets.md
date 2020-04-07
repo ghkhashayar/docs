@@ -10,7 +10,7 @@
   - [Vue component](#vue-component)
   - [Widget custom properties](#widget-custom-properties)
 
-Widgets are classes that handling model field operations like showing field, show in table, searching, sorting, and etc.
+Widgets are classes that handling model field operations like showing field, shown in the table, searching, sorting, etc.
 
 ## Create a widget
 Most simple widget is a `TextWidget`.
@@ -21,32 +21,32 @@ $this->widgets[] = TextWidget::create('field name', 'Label')
 ```
 
 ## Base Properties
-These properties exists in all widgets.
+These properties exist in all widgets.
 
 #### onIndex
 `type: boolean`
 
-is this element availble on index.
+is this element available on the index.
 
 #### onView
 `type: boolean`
 
-is this element availble on view.
+is this element available on view.
 
 #### onCreate
 `type: boolean`
 
-is this element availble on create.
+is this element available on create.
 
 #### onEdit
 `type: boolean`
 
-is this element availble on edit.
+is this element available on edit.
 
 #### onStore
 `type: boolean`
 
-should this store in database.
+should this store on the database.
 
 #### sortable
 `type: boolean`
@@ -56,12 +56,12 @@ is this widget sortable.
 #### searchable
 `type: boolean`
 
-is this widget searchable.
+is this widget searchable?
 
 #### customStore
 `type: callable`
 
-store with custom method
+store with a custom method
 
 parameters : ($request, $item).
 
@@ -74,21 +74,21 @@ parameters : ($request, $item).
 #### customPreStore
 `type: callable`
 
-pre store with custom method
+pre-store with a custom method
 
 parameters : ($request, $item).
 
 #### customPostStore
 `type: callable`
 
-post store with custom method
+post store with a custom method
 
 parameters : ($request, $item).
 
 #### customModifyResponse
 `type: callable`
 
-custom item response modifyer
+custom item response modifier
 
 parameters : ($response, $item).
 
@@ -102,7 +102,7 @@ parameters : ($request, $item).
 #### value
 `type: mixed`
 
-default value for input.
+the default value for the input.
 
 #### name
 `type: string`
@@ -127,12 +127,12 @@ field default tag in table columns.
 #### viewGroupTag
 `type: string`
 
-field default view wraping group tag in show page.
+field default views wrapping group tag on the show page.
 
 #### viewTag
 `type: string`
 
-field default tag in show page.
+field default tag on the show page.
 
 #### tag
 `type: string`
@@ -142,7 +142,7 @@ field tag.
 #### groupTag
 `type: string`
 
-field wraping group tag.
+field wrapping group tag.
 
 #### class
 `type: string`
@@ -172,17 +172,17 @@ $this->widgets[] = TextWidget::create('name')
 #### createRules
 `type: string|array`
 
-Add custom validation rules to widget just for create form.
+Add custom validation rules to widget just for the create form.
 
 #### editRules
 `type: string|array`
 
-Add custom validation rules to widget just for edit form.
+Add custom validation rules to widget just for the edit form.
 
 #### translation
 `type: boolean`
 
-Is this field is a multilingal field or not.
+Is this field is multilingual or not.
 
 ```php
 $this->widgets[] = TextWidget::create('name')
@@ -219,9 +219,9 @@ $this->widgets[] = TextWidget::create('name')
   * [HasMany](./widgets/has-many.md)
 
 ## Extending widgets
-First you should prepare your project for [Custom Compile](./compile.md).
+First, you should prepare your project for [Custom Compile](./compile.md).
 
-Then you should register your widget vue components in `sanjab.js`:
+Then you should register your widget Vue components in `sanjab.js`:
 
 ```js
 require('sanjab');
@@ -255,14 +255,14 @@ class MyCustomWidget extends Widget
 
 ```
 
-You can set properties of your widget in init function.
+You can set the properties of your widget in init function.
 
 ### Widget Properties
 
 #### indexTag
 `type: string`
 
-Widget tag in list. you should register custom vue components in javascript if needed.
+Widget tag in the list. you should register custom Vue components in javascript if needed.
 
 #### viewTag
 `type: string`
@@ -277,12 +277,12 @@ Widget group tag in view page. (Recommended to not change)
 #### tag
 `type: string`
 
-Widget tag in create and edit form.
+Widget tag in creates and edit form.
 
 #### groupTag
 `type: string`
 
-Widget group tag in create and edit form. (Recommended to not change)
+Widget group tag in creates and edit form. (Recommended to not change)
 
 #### class
 `type: string`
@@ -302,14 +302,14 @@ Called when widget creating but all other widgets also initialized.
 #### tableColumns
 `returns: Sanjab\Helpers\TableColumn[]`
 
-Creating table columns manually if a widget need more than one column in list.
+Creating table columns manually if a widget needs more than one column in the list.
 
 ##### Table Column Properties
 
 ##### key
 `type: string`
 
-Key of response to show on column.
+Key of response to show on a column.
 
 ##### sortable
 `type: boolean`
@@ -319,7 +319,7 @@ Is column sortable.
 ##### tag
 `type: string`
 
-Tag of column.
+The tag of the column.
 
 ---
 
@@ -353,7 +353,7 @@ First parameter for `SearchType::create` is unique type name using for [search](
 
 `param: string|null $type`: Search type based on [searchTypes](#searchtypes). if was null then it's a global search not advanced search.
 
-`param: mixed $search`: search parameters based on widgets of search type.
+`param: mixed $search`: search parameters based on widgets or search type.
 
 Customize search queries based on [SearchTypes](#searchtypes).
 
@@ -429,7 +429,7 @@ public function store(Request $request, Model $item)
 
 `param: Illuminate\Database\Eloquent\Model $model`: Model item to save data on that.
 
-function before any store will called.
+function before any store will be called.
 
 #### postStore
 
@@ -437,9 +437,9 @@ function before any store will called.
 
 `param: Illuminate\Database\Eloquent\Model $model`: Model item to save data on that.
 
-store data on model after model created on database. recommended way to store relation based data.
+store data on the model after the model created on the database. recommended way to store relation based data.
 
-> Note: You should override store to ignore default store.
+> Note: You should override the store to ignore the default store.
 
 #### modifyRequest
 
@@ -447,7 +447,7 @@ store data on model after model created on database. recommended way to store re
 
 `param: Illuminate\Database\Eloquent\Model $model`: Model item.
 
-To modify request data before store.
+To modify request data before storing the model.
 
 Example:
 ```php
@@ -466,7 +466,7 @@ protected function modifyRequest(Request $request, Model $item = null)
 
 `param: Illuminate\Database\Eloquent\Model $model`: Model item.
 
-Convert model data to response data to access on client side.
+Convert model data to response data to access on the client-side.
 
 Example:
 ```php
@@ -484,7 +484,7 @@ protected function modifyResponse(stdClass $response, Model $item)
 
 `param: Illuminate\Database\Eloquent\Model $model`: Model item.
 
-`returns: array`: array of validation attributes.
+`returns: array`: an array of validation attributes.
 
 Default example:
 ```php
@@ -505,7 +505,7 @@ public function validationAttributes(Request $request, string $type, Model $item
 
 `param: Illuminate\Database\Eloquent\Model $model`: Model item.
 
-`returns: array`: array of validation rules.
+`returns: array`: an array of validation rules.
 
 Default Example:
 ```php
@@ -525,7 +525,7 @@ public function validationRules(Request $request, string $type, Model $item = nu
 
 `param: Illuminate\Database\Eloquent\Model $model`: Model item.
 
-`returns: array`: array of validation custom messages.
+`returns: array`: an array of validation custom messages.
 
 ---
 ### Model Events
@@ -546,7 +546,7 @@ public function validationRules(Request $request, string $type, Model $item = nu
 
 ---
 ### Vue component
-You can access all attributes in vue component by defining them as `prop`.
+You can access all attributes in the Vue component by defining them as `prop`.
 
 Example to access name:
 ```vue
@@ -567,7 +567,7 @@ Example to access name:
 </script> {% endraw  %}
 ```
 
-To send data to backend on form submit your component should support `v-model` to set value.
+To send data to the backend on form submit your component should support `v-model` to set value.
 
 Read more on [Vue.js documents](https://vuejs.org/v2/guide/components.html#Using-v-model-on-Components).
 
@@ -645,7 +645,7 @@ Money widget example:
 ---
 
 ### Widget custom properties
-If you want to use some custom properties on vue side then you can easily set them on server side like this.
+If you want to use some custom properties on the Vue side then you can easily set them on the server-side like this.
 
 ```php
 $this->myCustomProperty('my custom property value');
@@ -660,7 +660,7 @@ To read property value:
 $this->property('myCustomProperty', 'Default Value');
 ```
 
-For provide autocompletion for custom properties you need to add php doc for your widget classes.
+For providing autocompletion for custom properties you need to add php doc for your widget classes.
 
 Example:
 ```php
@@ -677,7 +677,7 @@ MyCustomWidget::create(...)
         ->myCustomProperty('my value');
 ```
 
-Also you can define properties as function to modify value before store or have a default value.
+Also, you can define properties as function to modify value before store or have a default value.
 
 Always UPPERCASE attribute example:
 ```php
@@ -695,7 +695,7 @@ public function myCustomProperty(string $value = 'DEFAULT')
 
 ```
 
-To access custom properties on widget vue component you should define prop for custom property.
+To access custom properties on the widget Vue component you should define prop for the custom property.
 ```vue
 {% raw  %}<template>
     <div>

@@ -1,3 +1,6 @@
+---
+sidebarDepth: 0
+---
 # Color Widget
 ![Color widget](../images/screenshots/widgets/color.jpg)
 

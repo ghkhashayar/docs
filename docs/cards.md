@@ -7,7 +7,7 @@
 Cards are classes that showing any block in dashboard or crud.
 
 ## Create a card
-Most simple card is a `StatsCard`.
+The most simple card is a `StatsCard`.
 ```php
 use Sanjab\Cards\StatsCard;
 
@@ -26,7 +26,7 @@ Card tag.
 Bootstrap column based size.
 
 #### title
-Title of card.
+Title of the card.
 
 #### order
 Order of card in cards.

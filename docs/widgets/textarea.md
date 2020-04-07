@@ -1,3 +1,6 @@
+---
+sidebarDepth: 0
+---
 # Text Area Widget
 ![Textarea widget](../images/screenshots/widgets/textarea.jpg)
 

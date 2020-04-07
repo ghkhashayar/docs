@@ -1,3 +1,6 @@
+---
+sidebarDepth: 0
+---
 # FontAwesome Widget
 ![Fontawesome widget](../images/screenshots/widgets/fontawesome.jpg)
 

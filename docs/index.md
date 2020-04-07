@@ -58,9 +58,9 @@ sidebarDepth: 0
 
 <h2 align="center">Yet another admin package for <a href="https://laravel.com/">Laravel</a>.</h2>
 
-Sanjab let you create an extendiable admin panel as fast as possible with pure code.
+Sanjab lets you create an extendible admin panel as fast as possible with pure code.
 
-Spend less time on admin side and focus on client side instead.
+Spend less time on the admin side and focus on the client-side instead.
 
 ::: tip
 This project is in the early stages and **is NOT ready** for **production** usage yet. Use it with your own risk.

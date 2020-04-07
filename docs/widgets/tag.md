@@ -1,3 +1,6 @@
+---
+sidebarDepth: 0
+---
 # Tag Widget
 ![Tag widget](../images/screenshots/widgets/tag.jpg)
 
@@ -16,7 +19,7 @@ $this->widgets[] = TagWidget::create('tags', 'Post Tags')
 ### asArray
 `type: boolean`
 
-You also can store tags as array in database. just enabled this option.
+You also can store tags as an array in the database. just enabled this option.
 
 ```php
 TagWidget::create('tags', 'Post Tags')
