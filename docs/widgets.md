@@ -197,9 +197,11 @@ $this->widgets[] = TextWidget::create('name')
 * [IdWidget](./widgets/id.md)
 * [ItemListWidget](./widgets/item-list.md)
 * [MapWidget](./widgets/map.md)
+* [MoneyWidget](./widgets/money.md)
 * [NumberWidget](./widgets/number.md)
 * [PasswordWidget](./widgets/password.md)
 * [SelectWidget](./widgets/select.md)
+* [SeperatorWidget](./widgets/seperator.md)
 * [ShowWidget](./widgets/show.md)
 * [TagWidget](./widgets/tag.md)
 * [TextAreaWidget](./widgets/textarea.md)
@@ -212,7 +214,9 @@ $this->widgets[] = TextWidget::create('name')
   * [Uppy](./widgets/uppy.md)
   * [elFinder](./widgets/elfinder.md)
 * Relational
-  * [BelongsTo]('./widgets/belongs-to-picker.md')
+  * [BelongsTo](./widgets/belongs-to-picker.md)
+  * [BelongsToMany](./widgets/belongs-to-many-picker.md)
+  * [HasMany](./widgets/has-many.md)
 
 ## Extending widgets
 First you should prepare your project for [Custom Compile](./compile.md).

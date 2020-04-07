@@ -77,14 +77,15 @@ This project is in the early stages and **is NOT ready** for **production** usag
 * [Localization](./localization.md)
 
 ## Features
-* CRUD controllers that working with eloquent models.
-* Customizable CRUD buttons.
-* Multiple input types and cards.
-* Extendiable for custom input type, cards and ... based on vue.js.
-* Just pure customizable code. no generator interface / magic at all.
-* Setting support with no pain.
-* Role/Permission support based on [bouncer](https://github.com/JosephSilber/bouncer).
-* Model policy support.
-* Multilingal inputs support based on [laravel translatable](https://github.com/Astrotomic/laravel-translatable).
+* Easy yet powerful.
+* Working directly with [Eloquent](https://laravel.com/docs/eloquent) models.
+* Eloquent relation & policy support.
+* Multiple [input types](./widgets.md) and [cards](./cards.md).
+* [Setting](./setting.md) support with no pain.
+* Extendible. [Create a custom field](./widgets.md#extending-widgets) or completely custom controller based on [vue.js](https://vuejs.org/).
+* Dynamic Role/Permission support based on [bouncer](https://github.com/JosephSilber/bouncer).
+* Customizable CRUD buttons and bulk actions support in few lines of code.
+* Multilingual inputs support based on [laravel translatable](https://github.com/Astrotomic/laravel-translatable).
 * Realtime notification tracking with toast and/or sound notification support.
+* Beautiful Material UI based on [Material Dashboard](https://www.creative-tim.com/product/material-dashboard).
 
