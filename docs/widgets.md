@@ -697,7 +697,7 @@ public function myCustomProperty(string $value = 'DEFAULT')
 
 To access custom properties on the widget Vue component you should define prop for the custom property.
 ```vue
-{% raw  %}<template>
+<template>
     <div>
         <h1>{{ myCustomProperty }}</h1>
     </div>
@@ -711,5 +711,5 @@ To access custom properties on the widget Vue component you should define prop f
             }
         }
     };
-</script> {% endraw  %}
+</script>
 ```

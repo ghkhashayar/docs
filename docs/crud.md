@@ -393,3 +393,6 @@ protected function onSaving(\Illuminate\Database\Eloquent\Model $item)
 }
 ```
 The above example will clear cached data when any change happened and also will fill the name field with 'Default' value if the user did not fill the name field.
+
+* [Widgets](./widgets.md)
+* [Cards](./cards.md)

@@ -39,7 +39,7 @@ Url of card
 
 Value showing in the card.
 
-> Highly recommended to use callback instead of raw value inorder to prevent extra database queries.
+> Highly recommended to use callback instead of raw value in order to prevent extra database queries.
 ```php
 ->value(function () {
     return Product::count();

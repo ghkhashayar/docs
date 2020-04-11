@@ -38,6 +38,9 @@ sidebarDepth: 0
         <img data-src="/images/screenshots/crud_form.jpg" class="swiper-lazy" />
     </swiper-slide>
     <swiper-slide>
+        <img data-src="/images/screenshots/dashboard.jpg" class="swiper-lazy" />
+    </swiper-slide>
+    <swiper-slide>
         <img data-src="/images/screenshots/login.jpg" class="swiper-lazy" />
     </swiper-slide>
     <swiper-slide>
