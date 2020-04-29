@@ -52,6 +52,9 @@ sidebarDepth: 0
     <swiper-slide>
         <img data-src="/images/screenshots/ticket_messages.jpg" class="swiper-lazy" />
     </swiper-slide>
+    <swiper-slide>
+        <img data-src="/images/screenshots/screen_saver.jpg" class="swiper-lazy" />
+    </swiper-slide>
     <div class="swiper-pagination swiper-pagination-white" slot="pagination"></div>
     <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
     <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
@@ -65,9 +68,6 @@ Sanjab lets you create an extendible admin panel as fast as possible with pure c
 
 Spend less time on the admin side and focus on the client-side instead.
 
-::: tip
-This project is in the early stages and **is NOT ready** for **production** usage yet. Use it with your own risk.
-:::
 ---
 
 * [Installation](./install.md)
@@ -76,6 +76,7 @@ This project is in the early stages and **is NOT ready** for **production** usag
 * [Setting Controllers](./setting.md)
 * [Widgets](./widgets.md)
 * [Cards](./cards.md)
+* [Actions](./actions.md)
 * [Authorization](./authorization.md)
 * [Localization](./localization.md)
 

@@ -25,6 +25,7 @@ module.exports = {
                     .sync("docs/cards/*.md")
                     .map(f => f.replace(/^docs/, ""))
             },
+            "/actions",
             "/localization",
             "/authorization",
             "/compile"

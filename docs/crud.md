@@ -14,6 +14,7 @@
 - [modifyRequest](#modifyrequest)
 - [modifyResonse](#modifyresonse)
 - [Model Events](#model-events)
+- [Other Details](#other-details)
 
 CRUD Controllers are controllers that handle resources Create/Edit/Update/Delete. CRUD Controllers working with a model and list of the model fields that in sanjab we call them Widget. Each widget handling operation like saving, form field, view field, table field, search, sort and etc.
 
@@ -394,5 +395,8 @@ protected function onSaving(\Illuminate\Database\Eloquent\Model $item)
 ```
 The above example will clear cached data when any change happened and also will fill the name field with 'Default' value if the user did not fill the name field.
 
+## Other Details
+
 * [Widgets](./widgets.md)
 * [Cards](./cards.md)
+* [Actions](./actions.md)
