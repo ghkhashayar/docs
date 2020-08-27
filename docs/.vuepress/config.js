@@ -34,7 +34,7 @@ module.exports = {
             { text: 'Discussion', link: 'https://discord.gg/kwuTZQd' },
         ],
         repo: "sanjabteam/sanjab",
-        docsRepo: "https://github.com/sanjabteam/sanjabteam.github.io",
+        docsRepo: "https://github.com/sanjabteam/docs",
         docsDir: "docs",
         docsBranch: "master",
         editLinks: true,
